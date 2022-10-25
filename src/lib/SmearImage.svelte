@@ -2,7 +2,7 @@
   export let imageName;
   export let smearName;
 
-  $: imagePath = "/public/smears/" + smearName + "/images/" + imageName;
+  $: imagePath = "/smears/" + smearName + "/images/" + imageName;
 </script>
 
 <div>
