@@ -52,4 +52,10 @@ added 61 packages, and audited 88 packages in 16s
   run `npm fund` for details
 
 found 0 vulnerabilities
+
+Denis@DESKTOP-C9O29H2 MINGW64 /e/development-Web/svelte/svelte-training (main)
+$ npx tailwindcss init -p
+
+Created Tailwind CSS config file: tailwind.config.cjs
+Created PostCSS config file: postcss.config.cjs
 ```

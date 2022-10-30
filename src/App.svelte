@@ -1,4 +1,5 @@
 <script>
+  import TailwindCss from "./TailwindCSS.svelte";
   import SmearViewer from "./lib/SmearViewer.svelte";
   import SmearList from "./lib/SmearList.svelte";
 
@@ -9,10 +10,12 @@
   }
 </script>
 
-<main>
+<TailwindCss />
+
+<main class="container">
   <SmearList on:message={smearListMessage} />
   <div>
-    <h1>Plasmodium View</h1>
+    <h1 class="text-blue-200 text-3xl font-bold underline">Plasmodium View</h1>
     <SmearViewer smearName={currentSmear} />
   </div>
 </main>

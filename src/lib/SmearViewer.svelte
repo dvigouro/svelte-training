@@ -23,16 +23,20 @@
   }
 </script>
 
-<div class="row">
-  <div class="nav">
+<div class="flex flex-row border-l-pink-200">
+  <div class="grow w-10 bg-slate-300">
     {#if imageIndex != 0}
       <div on:click={() => moveBack} on:keydown={() => moveBack}>Back</div>
     {/if}
   </div>
   <SmearImage {smearName} imageName={$data[smearName][imageIndex]} />
-  <div class="nav">
+  <div class="grow w-10 bg-slate-300">
     {#if imageIndex < $data[smearName].length - 1}
-      <div on:click={() => moveForward} on:keydown={() => moveForward}>
+      <div
+        class="grow w-10"
+        on:click={() => moveForward}
+        on:keydown={() => moveForward}
+      >
         Forward
       </div>
     {/if}
@@ -40,14 +44,4 @@
 </div>
 
 <style>
-  .row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-  }
-
-  .nav {
-    width: 20px;
-  }
 </style>

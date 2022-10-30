@@ -15,6 +15,7 @@
 <ul>
   {#each Object.keys($data) as smear}
     <li
+      class="text-blue-500"
       on:click={() => smearSelected(smear)}
       on:keydown={() => smearSelected(smear)}
     >
